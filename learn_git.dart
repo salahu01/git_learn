@@ -1,3 +1,3 @@
-void maindJKsanadsnklsdmlmlasdJASDn(){
+void main(){
   
 }
