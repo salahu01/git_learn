@@ -56,6 +56,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+  int _decrement = 100;
 
   void _incrementCounter() {
     setState(() {
@@ -65,6 +66,9 @@ class _MyHomePageState extends State<MyHomePage> {
       // _counter without calling setState(), then the build method would not be
       // called again, and so nothing would appear to happen.
       _counter++;
+  _decrement--;
+
+
     });
   }
 
@@ -110,6 +114,10 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
+              style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            Text(
+              '$_decrement',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
